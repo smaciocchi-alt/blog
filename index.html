@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riflessioni & Pensieri</title>
+    <style>
+        /* Palette di colori e variabili */
+        :root {
+            --bg-color: #12161a;
+            --text-color: #e2e8f0;
+            --accent-color: #90b4ce;
+            --card-bg: #1a202c;
+            --meta-color: #718096;
+            --border-color: #2d3748;
+        }
+
+        /* Reset e Stili Generali */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        /* Header del Blog */
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-style: italic;
+            color: var(--accent-color);
+            font-size: 1.1rem;
+        }
+
+        /* Struttura degli Articoli (Post) */
+        article {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 3rem;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-meta {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.9rem;
+            color: var(--meta-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .post-title {
+            font-size: 1.8rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-weight: normal;
+            line-height: 1.3;
+        }
+
+        .post-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .post-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 5rem;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.85rem;
+            color: var(--meta-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>Taccuino Digitale</h1>
+            <p>Riflessioni, appunti e pensieri sparsi nel tempo.</p>
+        </header>
+
+        <main>
+
+            <article>
+                <div class="post-meta">22 Giugno 2026</div>
+                <h2 class="post-title">Il valore del silenzio visivo</h2>
+                <div class="post-content">
+                    <p>In un mondo saturo di notifiche, informazioni costanti e stimoli continui, lo spazio vuoto diventa un lusso. Scrivere su una pagina bianca, priva di distrazioni, restituisce al pensiero il suo ritmo naturale.</p>
+                    <p>Questo spazio nasce proprio così: poche righe, nessun tracciamento, solo la purezza della parola scritta.</p>
+                </div>
+            </article>
+
+            <article>
+                <div class="post-meta">15 Giugno 2026</div>
+                <h2 class="post-title">Note sulla semplicità</h2>
+                <div class="post-content">
+                    <p>Spesso complichiamo gli strumenti che usiamo convinti che la complessità equivalga all'efficacia. Ma l'architettura più solida rimane quella che elimina il superfluo.</p>
+                    <p>Un file HTML, un foglio di stile minimale. Non serve altro per fissare un'idea prima che svanisca.</p>
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            <p>&copy; 2026 — Il mio Blog Personale. Creato con semplicità.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
