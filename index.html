@@ -27,12 +27,22 @@
             color: var(--text-color);
             font-family: 'Georgia', serif;
             line-height: 1.8;
-            padding: 2rem 1rem;
+            padding: 0 0 2rem 0; /* Rimosso padding superiore per l'immagine a schermo intero */
         }
 
         .container {
             max-width: 680px;
             margin: 0 auto;
+            padding: 0 1rem; /* Padding laterale spostato qui */
+        }
+
+        /* Immagine di Intestazione (Banner) */
+        .header-banner {
+            width: 100%;
+            height: 250px;
+            object-fit: cover; /* Ritaglia l'immagine proporzionalmente senza distorcerla */
+            display: block;
+            margin-bottom: 2rem;
         }
 
         /* Header del Blog */
@@ -64,6 +74,7 @@
             margin-bottom: 3rem;
             border: 1px solid var(--border-color);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Evita che le immagini escano dai bordi arrotondati */
         }
 
         .post-meta {
@@ -89,6 +100,28 @@
             margin-bottom: 0;
         }
 
+        /* Stile delle Immagini nei Post */
+        .post-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 1rem 0 1.5rem 0; /* Spazio sopra e sotto l'immagine */
+            border: 1px solid var(--border-color);
+        }
+
+        /* Didascalia opzionale per le immagini */
+        .image-caption {
+            display: block;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--meta-color);
+            font-style: italic;
+            margin-top: -1rem;
+            margin-bottom: 1.5rem;
+        }
+
         /* Footer */
         footer {
             text-align: center;
@@ -101,44 +134,48 @@
 </head>
 <body>
 
+    <!-- IMMAGINE DI INTESTAZIONE (BANNER) -->
+    <!-- Sostituisci l'URL qui sotto con la tua immagine -->
+    <img src="https://picsum.photos/1200/400" alt="Copertina del blog" class="header-banner">
+
     <div class="container">
         
+        <!-- Intestazione del Blog -->
         <header>
             <h1>Taccuino Digitale</h1>
             <p>Riflessioni, appunti e pensieri sparsi nel tempo.</p>
         </header>
 
+        <!-- Sezione Articoli -->
         <main>
 
+            <!-- Esempio Post 3 (Con Immagine) -->
             <article>
                 <div class="post-meta">22 Giugno 2026</div>
-                <h2 class="post-title">Le Voragini</h2>
+                <h2 class="post-title">Catturare l'ispirazione visiva</h2>
                 <div class="post-content">
+                    <p>A volte le parole da sole non bastano a descrivere lo stato d'animo di un momento. Accostare un'immagine a un pensiero aiuta a creare un'atmosfera immediata, un contesto silenzioso in cui far muovere chi legge.</p>
+                    
+                    <!-- IMMAGINE DENTRO IL POST -->
+                    <img src=immagini/depressione.jpg alt="Depressione" class="post-image">
+                    <span class="image-caption">La depressione.</span>
+
                     <p>La depressione scava delle voragini dentro l'animo, cavità enormi ed apparentemente incolmabili. In questi buchi neri vengono inghiottiti tutti gli amici, gli amori e gli affetti in generale. E' una sensazione di cupo straniamento, dove ogni minimo rumore viene amplificato dall'eco che si crea quando il suono si infrange nelle pareti impervie di queste cavità. E' un vuoto melmoso che sembra inghiottirti più cerchi di dimenarti. E poi è tutto buio e cupo, con la perenne sensazione dell'incombenza di una catastrofe che sembra la naturale conseguenza di qualunque aspettativa. C'è tanta paura dentro la depressione, una paura incontrollabile che genera ansia e l'ansia monta sempre di più, sino a degenerare nella rabbia feroce o nella disperazione più cieca. La depressione è assenza totale di prospettive positive sostituite da scenari terrificanti e si traduce in un senso generale di impotenza, di ineluttabilità e di assurdità. La vita diventa la più assurda delle esperienze una volta che la depressione la scarnifica e la svuota di qualunque significato. E questo assurdo ha il fetido odore della morte. Non è vero che il depresso non abbia paura della morte. E' che la vita fa ancora più paura, popolata da mostri e fantasmi che non danno tregua. Chi è depresso non insegue la morte, fugge dalla vita, e non è la stessa cosa.</p>
                 </div>
             </article>
 
-			
-			<article>
-                <div class="post-meta">22 Giugno 2026</div>
+            <!-- Esempio Post 2 -->
+            <article>
+                <div class="post-meta">20 Giugno 2026</div>
                 <h2 class="post-title">Il valore del silenzio visivo</h2>
                 <div class="post-content">
                     <p>In un mondo saturo di notifiche, informazioni costanti e stimoli continui, lo spazio vuoto diventa un lusso. Scrivere su una pagina bianca, priva di distrazioni, restituisce al pensiero il suo ritmo naturale.</p>
-                    <p>Questo spazio nasce proprio così: poche righe, nessun tracciamento, solo la purezza della parola scritta.</p>
-                </div>
-            </article>
-
-            <article>
-                <div class="post-meta">15 Giugno 2026</div>
-                <h2 class="post-title">Note sulla semplicità</h2>
-                <div class="post-content">
-                    <p>Spesso complichiamo gli strumenti che usiamo convinti che la complessità equivalga all'efficacia. Ma l'architettura più solida rimane quella che elimina il superfluo.</p>
-                    <p>Un file HTML, un foglio di stile minimale. Non serve altro per fissare un'idea prima che svanisca.</p>
                 </div>
             </article>
 
         </main>
 
+        <!-- Footer -->
         <footer>
             <p>&copy; 2026 — Il mio Blog Personale. Creato con semplicità.</p>
         </footer>
